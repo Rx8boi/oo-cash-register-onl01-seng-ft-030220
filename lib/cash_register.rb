@@ -1,4 +1,6 @@
 class CashRegister
+  
+  
     attr_accessor :total, :discount, :void
 
 
@@ -9,7 +11,7 @@ class CashRegister
     end
 
     def add_item(title, price, quantity = 1)
-        # binding.pry
+        
         @total += price * quantity
         @void = price * quantity
         quantity.times do
@@ -33,5 +35,6 @@ class CashRegister
 
     def void_last_transaction
         @total -= void
+        # binding.pry
     end
 end
