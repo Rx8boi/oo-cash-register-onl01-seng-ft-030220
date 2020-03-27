@@ -1,4 +1,4 @@
-require pry 
+require 'pry'
 class CashRegister
   
   
@@ -37,6 +37,7 @@ class CashRegister
 
   def void_last_transaction
     @total -= @price
+    binding.pry
   end
   
 end
